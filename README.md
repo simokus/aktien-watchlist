@@ -3,31 +3,36 @@
 Täglich aktualisierter Aktien-Screener als installierbare PWA. Reines Vanilla
 HTML/CSS/JS (kein Build-Step) auf GitHub Pages, Backend = GitHub Actions.
 
+- **Repo:** https://github.com/simokus/aktien-watchlist (öffentlich — GitHub Pages
+  erfordert auf dem kostenlosen Plan ein öffentliches Repo; im Code/Secrets steht nichts
+  Sensibles)
+- **Live-App:** https://simokus.github.io/aktien-watchlist/
 - **Kennzahlen-Score** (0–100, KAUFEN/HALTEN/VERKAUFEN): täglicher Cron-Job (Python, yfinance),
   deterministisch, kein LLM.
 - **KI-Tiefenanalyse**: auf Tap, via Anthropic-API mit Websuche, läuft serverseitig in einer
   GitHub Action. Der API-Key verlässt GitHub nie.
 
-## Setup
+## Setup — bereits erledigt
 
-1. **Repo anlegen** (privat empfohlen) und diese Dateien pushen.
-2. **Settings → Secrets and variables → Actions** → folgende Secrets anlegen:
-   - `ANTHROPIC_API_KEY` (Pflicht für die KI-Tiefenanalyse)
-   - `FMP_API_KEY` (optional — Upgrade-Pfad von yfinance auf Financial Modeling Prep)
-3. **Settings → Pages** → Source = `main` / `root` → aktivieren. Die Pages-URL notieren
-   (z. B. `https://<user>.github.io/<repo>/`).
-4. **Fine-grained Personal Access Token** erstellen (github.com/settings/tokens?type=beta):
-   - Repository access: nur dieses eine Repo
-   - Permissions: **Contents: Read and write**
-   - In der App unter ⚙️ Einstellungen eintragen (Owner, Repo, Token). Der Token bleibt
-     ausschliesslich im Browser-`localStorage` — er wird nie committet oder an einen Server
-     ausser GitHub selbst gesendet.
-5. **Erste Ausführung**: Actions-Tab → „Daily Update" → „Run workflow" manuell starten.
-   Danach existiert ein befülltes `data.json`.
-6. **Auf dem Handy installieren**: Pages-URL in Chrome öffnen → Menü → „Zum Startbildschirm
-   hinzufügen". Auf dem Galaxy Z Fold 6 passt sich das Layout beim Aufklappen automatisch
-   auf zwei Spalten (Liste + Detail nebeneinander) an.
-7. **Watchlists anpassen**: `largecaps`/`smallcaps` sind vorbefüllt (`watchlists.json`).
+Repo angelegt, Code gepusht (inkl. Workflow-Dateien), GitHub Pages aktiviert, erster
+Daily-Update-Lauf erfolgreich durchgeführt (`data.json` ist befüllt), Trigger-Kette für
+die KI-Tiefenanalyse End-to-End getestet.
+
+## Setup — noch von dir zu erledigen
+
+Siehe die separate **[SETUP-ANLEITUNG](SETUP-ANLEITUNG.md)** für die exakten,
+Schritt-für-Schritt-Anweisungen (Anthropic-Key hinterlegen, eigenes GitHub-Token
+erstellen, App installieren). Kurzfassung:
+
+1. **Settings → Secrets and variables → Actions** → `ANTHROPIC_API_KEY` anlegen
+   (Pflicht für die KI-Tiefenanalyse). Optional zusätzlich `FMP_API_KEY`.
+2. **Fine-grained Personal Access Token** erstellen (github.com/settings/tokens?type=beta),
+   Scope nur auf `aktien-watchlist`, Permission **Contents: Read and write** — dann in der
+   App unter ⚙️ Einstellungen eintragen (Owner `simokus`, Repo `aktien-watchlist`, Token).
+   Der Token bleibt ausschliesslich im Browser-`localStorage`.
+3. **Auf dem Handy installieren**: https://simokus.github.io/aktien-watchlist/ in Chrome
+   öffnen → Menü → „Zum Startbildschirm hinzufügen".
+4. **Watchlists anpassen**: `largecaps`/`smallcaps` sind vorbefüllt (`watchlists.json`).
    Über „📋 Watchlists verwalten" in der App änderbar (Token erforderlich) — jede Änderung
    schreibt `watchlists.json` direkt ins Repo und stösst dank des `push`-Triggers sofort
    ein Daily-Update für die neuen Ticker an.
