@@ -160,7 +160,10 @@ def run_claude_code(prompt: str) -> str:
         timeout=CLAUDE_TIMEOUT_SECONDS,
     )
     if result.returncode != 0:
-        raise RuntimeError(f"claude-CLI Fehler (exit {result.returncode}): {result.stderr[:2000]}")
+        # claude -p schreibt Fehlermeldungen (z.B. Auth-Fehler) nach stdout, nicht stderr -
+        # beide einbeziehen, sonst bleibt die eigentliche Ursache im Log unsichtbar.
+        detail = (result.stdout.strip() + "\n" + result.stderr.strip()).strip()
+        raise RuntimeError(f"claude-CLI Fehler (exit {result.returncode}): {detail[:2000]}")
     return result.stdout
 
 
