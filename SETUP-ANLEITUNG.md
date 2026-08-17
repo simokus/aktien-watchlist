@@ -2,7 +2,7 @@
 
 Alles Technische ist bereits erledigt: Repo erstellt, Code gepusht, GitHub Pages aktiv,
 erster Daten-Lauf erfolgreich. Es bleiben nur **3 Dinge**, die nur du machen kannst (weil sie
-deinen eigenen Anthropic-Account bzw. dein Handy brauchen). Jeder Schritt dauert 2–5 Minuten.
+deinen eigenen Claude-Pro/Max-Account bzw. dein Handy brauchen). Jeder Schritt dauert 2–5 Minuten.
 
 **Aktueller Stand:**
 - Repo: https://github.com/simokus/aktien-watchlist
@@ -13,25 +13,35 @@ deinen eigenen Anthropic-Account bzw. dein Handy brauchen). Jeder Schritt dauert
 
 ---
 
-## Schritt 1 — Anthropic-API-Key erstellen und in GitHub hinterlegen
+## Schritt 1 — Claude-Code-Token erstellen und in GitHub hinterlegen
 
-Ohne diesen Schritt funktioniert nur die „KI-Tiefenanalyse"-Funktion nicht — der Rest der App
-läuft schon.
+Läuft über dein **Claude Pro/Max-Abo**, keine extra Kosten. Ohne diesen Schritt funktioniert
+nur die „KI-Tiefenanalyse"-Funktion nicht — der Rest der App läuft schon.
 
-1. Gehe zu **https://console.anthropic.com/settings/keys** (mit deinem Anthropic-Account
-   einloggen, falls noch keiner existiert: dort registrieren).
-2. Klicke **„Create Key"**, gib ihr einen Namen (z. B. `aktien-watchlist`), klicke **„Create Key"**.
-3. **Kopiere den angezeigten Key sofort** (beginnt mit `sk-ant-...`) — er wird danach nie
-   wieder im Klartext angezeigt.
-4. Gehe zu **https://github.com/simokus/aktien-watchlist/settings/secrets/actions**.
-5. Klicke **„New repository secret"**.
-6. Name: `ANTHROPIC_API_KEY` (exakt so, Gross-/Kleinschreibung beachten).
-7. Secret: den kopierten Key einfügen.
-8. Klicke **„Add secret"**.
+1. Terminal auf deinem Computer öffnen.
+2. Claude-Code-CLI installieren (einmalig; Node.js ist bei dir schon vorhanden):
+   ```
+   npm install -g @anthropic-ai/claude-code
+   ```
+3. Ausführen:
+   ```
+   claude setup-token
+   ```
+4. Es öffnet sich ein Browserfenster — mit dem Claude-Account einloggen, der das Pro/Max-Abo
+   hat, und bestätigen.
+5. Im Terminal erscheint ein langer Token-String. **Sofort kopieren** — wird nur einmal
+   angezeigt.
+6. Gehe zu **https://github.com/simokus/aktien-watchlist/settings/secrets/actions**.
+7. Klicke **„New repository secret"**.
+8. Name: `CLAUDE_CODE_OAUTH_TOKEN` (exakt so, Gross-/Kleinschreibung beachten).
+9. Secret: den kopierten Token einfügen.
+10. Klicke **„Add secret"**.
 
-> 💰 **Kosten:** Jede KI-Tiefenanalyse kostet ein paar Cent bis niedrige zweistellige Cent-Beträge
-> (Modell `claude-sonnet-5` + Websuche). Es gibt keine automatische Obergrenze — der Key wird
-> nur aktiv, wenn du in der App „KI-Tiefenanalyse starten" antippst.
+> 💰 **Kosten:** Keine extra Kosten, läuft über dein bestehendes Abo-Kontingent. Einzige
+> Einschränkung: automatisierte Analysen teilen sich das Nutzungslimit (rollierendes
+> 5-Stunden-/Wochenlimit) mit deiner normalen Claude-Nutzung. Der Token gilt ein Jahr —
+> danach einfach `claude setup-token` erneut ausführen und das Secret mit dem neuen Wert
+> überschreiben (**„Update"** statt „New repository secret").
 
 ---
 
@@ -93,9 +103,9 @@ passt sich beim Aufklappen automatisch auf zwei Spalten an.
 
 1. In der App eine Aktie antippen (z. B. NVDA) → runterscrollen zu „KI-Tiefenanalyse" →
    **„KI-Tiefenanalyse starten/aktualisieren"** tippen.
-2. Status wechselt zu „Läuft im Hintergrund …". Das dauert **2–5 Minuten** (Websuche +
-   Berichtserstellung). Die App fragt automatisch alle 20 Sekunden nach — einfach die App
-   offen lassen oder später wieder reinschauen.
+2. Status wechselt zu „Läuft im Hintergrund …". Das dauert **3–8 Minuten** (Websuche +
+   Berichtserstellung über die Claude-Code-CLI). Die App fragt automatisch alle 20 Sekunden
+   nach — einfach die App offen lassen oder später wieder reinschauen.
 3. Fertiger Bericht erscheint automatisch inkl. „Dies ist keine Anlageberatung."-Hinweis.
 4. Optional: unter „📋 Watchlists verwalten" einen neuen Ticker hinzufügen (z. B. `AAPL`) →
    „In GitHub speichern" → nach ca. 1 Minute läuft automatisch ein Update-Workflow und die
@@ -110,7 +120,7 @@ passt sich beim Aufklappen automatisch auf zwei Spalten an.
 | Button „KI-Tiefenanalyse starten" bleibt ausgegraut | Owner/Repo/Token in ⚙️ Einstellungen nochmal prüfen — alle drei Felder müssen ausgefüllt sein. |
 | Fehlermeldung „401: GitHub-Token ungültig" | Token in Schritt 2 neu erstellen (evtl. abgelaufen oder falscher Account) und in ⚙️ neu eintragen. |
 | Fehlermeldung „409: Datei zwischenzeitlich geändert" | Seite neu laden (🔄-Button oder Pull-to-Refresh) und Änderung erneut versuchen. |
-| KI-Tiefenanalyse läuft länger als 8 Minuten / „Zeitüberschreitung" | Im Repo unter **Actions** (https://github.com/simokus/aktien-watchlist/actions) den Lauf „Deep Analysis" ansehen — meist fehlt der `ANTHROPIC_API_KEY` (Schritt 1) oder das Guthaben im Anthropic-Account ist aufgebraucht. |
+| KI-Tiefenanalyse läuft länger als 12 Minuten / „Zeitüberschreitung" | Im Repo unter **Actions** (https://github.com/simokus/aktien-watchlist/actions) den Lauf „Deep Analysis" ansehen — meist fehlt der `CLAUDE_CODE_OAUTH_TOKEN` (Schritt 1), er ist abgelaufen (1 Jahr Gültigkeit), oder das Pro/Max-Nutzungslimit ist gerade ausgeschöpft. |
 | Score-Zahlen wirken komisch / Kennzahl fehlt | Normal bei sehr kleinen/exotischen Tickern — steht dann als Hinweis („dataFlags") im Detail der Aktie. |
 | Watchlist-Änderung erscheint nicht in der Liste | Nach dem Speichern läuft automatisch der „Daily Update"-Workflow (dauert ~30–60 Sek.) — Seite danach neu laden. |
 

@@ -9,8 +9,9 @@ HTML/CSS/JS (kein Build-Step) auf GitHub Pages, Backend = GitHub Actions.
 - **Live-App:** https://simokus.github.io/aktien-watchlist/
 - **Kennzahlen-Score** (0–100, KAUFEN/HALTEN/VERKAUFEN): täglicher Cron-Job (Python, yfinance),
   deterministisch, kein LLM.
-- **KI-Tiefenanalyse**: auf Tap, via Anthropic-API mit Websuche, läuft serverseitig in einer
-  GitHub Action. Der API-Key verlässt GitHub nie.
+- **KI-Tiefenanalyse**: auf Tap, via Claude-Code-CLI (Headless-Modus) mit Websuche, läuft
+  serverseitig in einer GitHub Action gegen das **Claude Pro/Max-Abo-Kontingent** (kein
+  separates Pay-per-Token-API-Billing). Das Auth-Token verlässt GitHub nie.
 
 ## Setup — bereits erledigt
 
@@ -21,11 +22,12 @@ die KI-Tiefenanalyse End-to-End getestet.
 ## Setup — noch von dir zu erledigen
 
 Siehe die separate **[SETUP-ANLEITUNG](SETUP-ANLEITUNG.md)** für die exakten,
-Schritt-für-Schritt-Anweisungen (Anthropic-Key hinterlegen, eigenes GitHub-Token
+Schritt-für-Schritt-Anweisungen (Claude-Code-Token erstellen, eigenes GitHub-Token
 erstellen, App installieren). Kurzfassung:
 
-1. **Settings → Secrets and variables → Actions** → `ANTHROPIC_API_KEY` anlegen
-   (Pflicht für die KI-Tiefenanalyse). Optional zusätzlich `FMP_API_KEY`.
+1. Lokal `claude setup-token` ausführen (Claude Pro/Max-Abo vorausgesetzt) → erzeugten
+   Token als Secret `CLAUDE_CODE_OAUTH_TOKEN` unter **Settings → Secrets and variables →
+   Actions** anlegen (Pflicht für die KI-Tiefenanalyse). Optional zusätzlich `FMP_API_KEY`.
 2. **Fine-grained Personal Access Token** erstellen (github.com/settings/tokens?type=beta),
    Scope nur auf `aktien-watchlist`, Permission **Contents: Read and write** — dann in der
    App unter ⚙️ Einstellungen eintragen (Owner `simokus`, Repo `aktien-watchlist`, Token).
@@ -52,11 +54,19 @@ erstellen, App installieren). Kurzfassung:
 - **`dividendYield`-Quirk**: Aktuelle yfinance-Versionen liefern `dividendYield` bereits als
   fertigen Prozentwert (z. B. `3.83` = 3.83 %), nicht als Bruch wie die übrigen Kennzahlen.
   Frontend und KI-Prompt formatieren das Feld entsprechend ohne zusätzliche `×100`-Umrechnung.
-- **KI-Modell**: Standard ist `claude-sonnet-5` (gutes Kosten-/Qualitäts-Verhältnis für die
-  websuche-gestützte Tiefenanalyse). Für noch tiefere Analysen kann in
-  `scripts/deep_analysis.py` auf `claude-opus-5` gewechselt werden (aktuell leistungsfähigstes
-  Opus-Modell, Stand dieses Setups). **Modell-Strings vor Nutzung immer gegen
-  [docs.claude.com](https://docs.claude.com) prüfen** — sie ändern sich mit neuen Releases.
+- **KI-Modell & Abrechnung**: `scripts/deep_analysis.py` ruft die **Claude-Code-CLI** im
+  Headless-Modus (`claude -p ... --tools "WebSearch" --allowedTools "WebSearch"`) als
+  Subprozess auf statt der Anthropic-Python-SDK direkt — dadurch läuft die Analyse gegen das
+  **Claude Pro/Max-Abo-Kontingent** (`CLAUDE_CODE_OAUTH_TOKEN`, per `claude setup-token`
+  erzeugt) statt gegen separate Pay-per-Token-API-Abrechnung. Das Token ist ein Jahr gültig
+  und teilt sich das Nutzungslimit (rollierendes 5-Stunden-/Wochenlimit) mit der normalen
+  Claude-Code-/claude.ai-Nutzung des Accounts. Wer stattdessen die klassische, unabhängig
+  abgerechnete API bevorzugt (eigenes Kontingent, aber Kosten pro Aufruf), kann
+  `run_claude_code()` wieder auf die Anthropic-Python-SDK zurückbauen — Modell bleibt
+  `claude-sonnet-5`. Für tiefere Analysen: `--model claude-opus-5` in `run_claude_code()`
+  setzen (aktuell leistungsfähigstes Opus-Modell, Stand dieses Setups). **Modell-Strings vor
+  Nutzung immer gegen [docs.claude.com](https://docs.claude.com) prüfen** — sie ändern sich
+  mit neuen Releases.
 - **Markdown-Renderer**: bewusst eine ~50-zeilige Eigenimplementierung (`renderMarkdown` in
   `app.js`) statt einer CDN-Bibliothek wie `marked` — deckt Überschriften, Tabellen, Listen,
   Bold/Italic/Code ab (das Format, das die KI-Prompts erzeugen) und funktioniert damit auch

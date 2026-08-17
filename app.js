@@ -3,7 +3,7 @@
 const LS_SETTINGS = "watchlist-settings";
 const LS_UI = "watchlist-ui";
 const POLL_INTERVAL_MS = 20000;
-const POLL_MAX_ATTEMPTS = 24; // ~8 Minuten
+const POLL_MAX_ATTEMPTS = 36; // ~12 Minuten - Claude-Code-CLI-Loop dauert tendenziell laenger als ein reiner API-Call
 
 const state = {
   watchlists: { watchlists: [] },

@@ -32,12 +32,20 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install dependencies
+      - name: Install Python dependencies
         run: pip install -r scripts/requirements.txt
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install Claude Code CLI
+        run: npm install -g @anthropic-ai/claude-code
 
       - name: Run deep analysis
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           TICKER: ${{ github.event.client_payload.ticker || github.event.inputs.ticker }}
           PROFILE: ${{ github.event.client_payload.profile || github.event.inputs.profile }}
         run: python scripts/deep_analysis.py

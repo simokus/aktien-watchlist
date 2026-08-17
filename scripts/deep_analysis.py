@@ -1,16 +1,18 @@
-"""KI-Tiefenanalyse via Anthropic-API mit Websuche. Wird durch die deep-analysis
-GitHub Action angestossen (repository_dispatch). Schreibt analyses/<TICKER>.json.
+"""KI-Tiefenanalyse via Claude-Code-CLI (Headless-Modus) mit Websuche. Laeuft gegen das
+Claude Pro/Max-Abo-Kontingent (CLAUDE_CODE_OAUTH_TOKEN aus `claude setup-token`), nicht
+gegen Pay-per-Token-API-Abrechnung. Wird durch die deep-analysis GitHub Action angestossen
+(repository_dispatch). Schreibt analyses/<TICKER>.json.
 """
 from __future__ import annotations
 
 import json
 import os
 import re
+import subprocess
 import sys
 from datetime import datetime, date, timezone
 from pathlib import Path
 
-import anthropic
 import requests
 import yfinance as yf
 
@@ -20,6 +22,7 @@ ROOT = Path(__file__).resolve().parent.parent
 ANALYSES_DIR = ROOT / "analyses"
 MODEL = "claude-sonnet-5"
 JSON_MARKER = "###JSON###"
+CLAUDE_TIMEOUT_SECONDS = 600
 
 
 def fetch_metrics(ticker: str) -> dict:
@@ -122,52 +125,43 @@ kein weiterer Text danach) mit exakt diesen Feldern:
 """
 
 
-def build_messages(ticker: str, profile: str, metrics_text: str) -> list[dict]:
+def build_prompt(ticker: str, profile: str, metrics_text: str) -> str:
     today = date.today().isoformat()
     instructions = SMALLCAP_INSTRUCTIONS if profile == "smallcap" else LARGECAP_INSTRUCTIONS
     instructions = instructions.format(ticker=ticker, today=today)
 
-    user_text = (
+    return (
         f"{instructions}\n\n{JSON_INSTRUCTIONS}\n\n"
         f"Bekannte Kennzahlen (Stand yfinance, ggf. via Websuche aktualisieren):\n{metrics_text}"
     )
-    return [{"role": "user", "content": user_text}]
 
 
-def run_with_tools(client: anthropic.Anthropic, messages: list[dict]) -> str:
-    """Ruft die Messages-API mit web_search-Tool auf, hängt Text-Blöcke zusammen,
-    resumed bei pause_turn (Server-Tool-Loop-Limit).
+def run_claude_code(prompt: str) -> str:
+    """Ruft die Claude-Code-CLI im Headless-Modus (-p) auf statt der Anthropic-API direkt.
 
-    Streaming statt normalem create(): claude-sonnet-5 denkt standardmässig adaptiv,
-    und die Denk-Tokens zählen mit ins max_tokens-Budget - bei einem so langen
-    Bericht (Websuche + Tabellen + JSON-Block) reicht ein nicht-streamendes Limit
-    sonst nicht zuverlässig aus, ohne die SDK-Timeout-Schwelle zu riskieren.
+    Auth laeuft ueber CLAUDE_CODE_OAUTH_TOKEN (Claude Pro/Max-Abo, via `claude setup-token`
+    erzeugt) statt ueber ANTHROPIC_API_KEY - kostet damit nichts extra. --tools schraenkt
+    die verfuegbaren Tools hart auf Websuche ein (kein Bash/Datei-Zugriff im CI-Runner
+    noetig oder gewuenscht); --allowedTools bestaetigt sie zusaetzlich vorab, damit der
+    Non-Interactive-Modus nicht auf eine Rueckfrage wartet. Flags gegen die real
+    installierte CLI (2.1.233) verifiziert, nicht nur aus der Doku uebernommen.
     """
-    full_text_parts: list[str] = []
-    tools = [{"type": "web_search_20260209", "name": "web_search"}]
-
-    for _ in range(4):
-        with client.messages.stream(
-            model=MODEL,
-            max_tokens=16000,
-            tools=tools,
-            messages=messages,
-        ) as stream:
-            response = stream.get_final_message()
-
-        if response.stop_reason == "refusal":
-            raise RuntimeError("Anthropic-API hat die Anfrage abgelehnt (Refusal).")
-
-        for block in response.content:
-            if block.type == "text":
-                full_text_parts.append(block.text)
-
-        if response.stop_reason == "pause_turn":
-            messages = messages[:1] + [{"role": "assistant", "content": response.content}]
-            continue
-        break
-
-    return "\n".join(full_text_parts)
+    result = subprocess.run(
+        [
+            "claude", "-p", prompt,
+            "--model", MODEL,
+            "--tools", "WebSearch",
+            "--allowedTools", "WebSearch",
+            "--output-format", "text",
+            "--no-session-persistence",
+        ],
+        capture_output=True,
+        text=True,
+        timeout=CLAUDE_TIMEOUT_SECONDS,
+    )
+    if result.returncode != 0:
+        raise RuntimeError(f"claude-CLI Fehler (exit {result.returncode}): {result.stderr[:2000]}")
+    return result.stdout
 
 
 def parse_result(full_text: str) -> tuple[str, dict]:
@@ -188,10 +182,9 @@ def main() -> None:
 
     metrics = fetch_metrics(ticker)
     metrics_text = format_metrics_de(metrics)
-    messages = build_messages(ticker, profile, metrics_text)
+    prompt = build_prompt(ticker, profile, metrics_text)
 
-    client = anthropic.Anthropic()
-    full_text = run_with_tools(client, messages)
+    full_text = run_claude_code(prompt)
     markdown, result = parse_result(full_text)
 
     output = {
