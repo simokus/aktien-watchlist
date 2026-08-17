@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aktien Watchlist</title>
+<meta name="description" content="Täglicher Aktien-Screener mit KI-Tiefenanalyse">
+<meta name="theme-color" content="#0f172a">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <h1 class="app-title">📈 Watchlist</h1>
+  <div class="topbar-actions">
+    <button id="btn-refresh" class="icon-btn" title="Aktualisieren" aria-label="Aktualisieren">🔄</button>
+    <button id="btn-manage" class="icon-btn" title="Watchlists verwalten" aria-label="Watchlists verwalten">📋</button>
+    <button id="btn-settings" class="icon-btn" title="Einstellungen" aria-label="Einstellungen">⚙️</button>
+  </div>
+</header>
+
+<nav id="tabs" class="tabs" aria-label="Watchlists"></nav>
+
+<div class="toolbar">
+  <label class="toolbar-field">
+    Sortierung
+    <select id="sort-select">
+      <option value="score">Score ↓</option>
+      <option value="verdict">Verdict</option>
+      <option value="name">Name</option>
+      <option value="change">Änderung</option>
+    </select>
+  </label>
+  <div class="filter-chips" role="group" aria-label="Filter">
+    <button class="chip" data-filter="alle">Alle</button>
+    <button class="chip" data-filter="KAUFEN">Nur Kaufen</button>
+    <button class="chip" data-filter="VERKAUFEN">Nur Verkaufen</button>
+  </div>
+</div>
+
+<p id="last-updated" class="last-updated"></p>
+
+<main id="main-grid">
+  <section id="list-panel" aria-label="Aktienliste"></section>
+  <section id="detail-panel" aria-label="Detailansicht">
+    <p class="empty-hint">Wähle links eine Aktie aus, um Details zu sehen.</p>
+  </section>
+</main>
+
+<dialog id="settings-dialog">
+  <form method="dialog" id="settings-form">
+    <h2>Einstellungen</h2>
+    <p class="hint">
+      Das GitHub-Token wird ausschliesslich lokal in deinem Browser (localStorage) gespeichert
+      und niemals committet. Ohne Token ist die App read-only.
+    </p>
+    <label>GitHub Owner
+      <input type="text" id="settings-owner" placeholder="z.B. simonkull" autocomplete="off">
+    </label>
+    <label>Repository
+      <input type="text" id="settings-repo" placeholder="z.B. aktien-watchlist" autocomplete="off">
+    </label>
+    <label>Fine-grained Personal Access Token
+      <input type="password" id="settings-pat" placeholder="github_pat_..." autocomplete="off">
+    </label>
+    <div class="dialog-actions">
+      <button type="button" id="settings-cancel" class="btn-secondary">Abbrechen</button>
+      <button type="submit" class="btn-primary">Speichern</button>
+    </div>
+  </form>
+</dialog>
+
+<dialog id="manage-dialog">
+  <div class="dialog-body">
+    <h2>Watchlists verwalten</h2>
+    <div id="manage-lists"></div>
+    <details class="new-watchlist">
+      <summary>+ Neue Watchlist</summary>
+      <form id="new-watchlist-form">
+        <label>Name <input type="text" id="new-wl-name" required></label>
+        <label>Profil
+          <select id="new-wl-profile">
+            <option value="largecap">largecap</option>
+            <option value="smallcap">smallcap</option>
+          </select>
+        </label>
+        <button type="submit" class="btn-primary">Anlegen</button>
+      </form>
+    </details>
+    <div class="dialog-actions">
+      <button type="button" id="manage-close" class="btn-secondary">Schliessen</button>
+      <button type="button" id="manage-save" class="btn-primary">In GitHub speichern</button>
+    </div>
+    <p id="manage-status" class="hint"></p>
+  </div>
+</dialog>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>

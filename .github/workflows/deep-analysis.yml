@@ -1,0 +1,51 @@
+name: Deep Analysis
+
+on:
+  repository_dispatch:
+    types: [deep-analysis]
+  workflow_dispatch:
+    inputs:
+      ticker:
+        description: "Ticker-Symbol (z.B. MSFT)"
+        required: true
+      profile:
+        description: "Profil"
+        required: true
+        default: "largecap"
+        type: choice
+        options:
+          - largecap
+          - smallcap
+
+permissions:
+  contents: write
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Run deep analysis
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          TICKER: ${{ github.event.client_payload.ticker || github.event.inputs.ticker }}
+          PROFILE: ${{ github.event.client_payload.profile || github.event.inputs.profile }}
+        run: python scripts/deep_analysis.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add analyses/
+          git diff --cached --quiet || git commit -m "chore: deep analysis for ${{ github.event.client_payload.ticker || github.event.inputs.ticker }} [skip ci]"
+          git push

@@ -1,0 +1,16 @@
+{
+  "watchlists": [
+    {
+      "id": "largecaps",
+      "name": "Large Caps",
+      "profile": "largecap",
+      "tickers": ["MSFT", "NVDA", "GOOGL", "NESN.SW", "ASML.AS"]
+    },
+    {
+      "id": "smallcaps",
+      "name": "Small Caps",
+      "profile": "smallcap",
+      "tickers": ["VYX"]
+    }
+  ]
+}
