@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-29T13:31:56.611945+02:00",
+  "lastUpdated": "2026-08-30T12:24:36.575868+02:00",
   "source": "yfinance",
   "stocks": {
     "MSFT": {
@@ -15,9 +15,9 @@
       "summary": "Microsoft Corporation, a technology company, develops and supports a portfolio of technology solutions for individuals and businesses worldwide. Its products include operating systems, server applications, business solution applications, software development tools, desktop and server management tool",
       "profileUsed": "largecap",
       "metrics": {
-        "pe": 28.640827,
+        "pe": 28.169502,
         "fwdPe": 21.78441,
-        "peg": 1.6,
+        "peg": 1.64,
         "pb": 8.621339,
         "evEbitda": 19.899,
         "fcfYield": 0.0043389603005638735,
@@ -33,7 +33,7 @@
         "targetMean": 569.4537,
         "analystCount": 52,
         "recommendationKey": "strong_buy",
-        "dividendYield": 0.72
+        "dividendYield": 0.71
       },
       "score": 65,
       "scoreLabel": "Positiv",
@@ -70,11 +70,11 @@
       "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and n",
       "profileUsed": "largecap",
       "metrics": {
-        "pe": 27.503162,
+        "pe": 27.468435,
         "fwdPe": 14.213399,
-        "peg": 0.59,
+        "peg": 0.63,
         "pb": 26.95787,
-        "evEbitda": 27.181,
+        "evEbitda": 25.933,
         "fcfYield": 0.007958965393734009,
         "roe": 1.17211,
         "grossMargin": 0.74674004,
@@ -85,10 +85,10 @@
         "beta": 2.215,
         "week52High": 236.54,
         "week52Low": 164.07,
-        "targetMean": 305.7931,
+        "targetMean": 323.41898,
         "analystCount": 58,
         "recommendationKey": "strong_buy",
-        "dividendYield": 0.44
+        "dividendYield": 0.46
       },
       "score": 84,
       "scoreLabel": "Stark positiv",
@@ -99,11 +99,11 @@
         "Bilanz": 80,
         "Analysten": 100
       },
-      "fairValue": 305.79,
-      "conservativeFairValue": 259.92,
-      "safetyMarginPct": 0.2886,
-      "buyZone": 259.92,
-      "sellThreshold": 351.66,
+      "fairValue": 323.42,
+      "conservativeFairValue": 274.91,
+      "safetyMarginPct": 0.3273,
+      "buyZone": 274.91,
+      "sellThreshold": 371.93,
       "verdict": "KAUFEN",
       "dataFlags": [
         "Analysten-Coverage voll (58)",
@@ -125,9 +125,9 @@
       "summary": "Alphabet Inc. offers various products and platforms in the United States, Europe, the Middle East, Africa, the Asia-Pacific, Canada, and Latin America. It operates through Google Services, Google Cloud, and Other Bets segments. The Google Services segment provides products and services, including ad",
       "profileUsed": "largecap",
       "metrics": {
-        "pe": 17.390366,
+        "pe": 17.090237,
         "fwdPe": 23.374542,
-        "peg": 0.94,
+        "peg": 0.92,
         "pb": 6.8097687,
         "evEbitda": 23.88,
         "fcfYield": 0.005347066389589723,
@@ -143,7 +143,7 @@
         "targetMean": 428.06668,
         "analystCount": 54,
         "recommendationKey": "strong_buy",
-        "dividendYield": 0.26
+        "dividendYield": 0.25
       },
       "score": 77,
       "scoreLabel": "Positiv",
@@ -195,10 +195,10 @@
         "beta": 0.499,
         "week52High": 87.09,
         "week52Low": 70.29,
-        "targetMean": 88.86364,
+        "targetMean": 88.36364,
         "analystCount": 22,
         "recommendationKey": "buy",
-        "dividendYield": 3.95
+        "dividendYield": 3.94
       },
       "score": 39,
       "scoreLabel": "Zurückhaltend",
@@ -209,11 +209,11 @@
         "Bilanz": 6,
         "Analysten": 66
       },
-      "fairValue": 88.86,
-      "conservativeFairValue": 75.53,
-      "safetyMarginPct": 0.1153,
-      "buyZone": 66.65,
-      "sellThreshold": 102.19,
+      "fairValue": 88.36,
+      "conservativeFairValue": 75.11,
+      "safetyMarginPct": 0.1103,
+      "buyZone": 66.27,
+      "sellThreshold": 101.62,
       "verdict": "VERKAUFEN",
       "dataFlags": [
         "Analysten-Coverage voll (22)",
@@ -235,9 +235,9 @@
       "summary": "ASML Holding N.V. provides lithography solutions for the development, production, marketing, sales, upgrading, and servicing of advanced semiconductor equipment systems. The company offers lithography, metrology, and inspection systems. It also provides extreme ultraviolet lithography systems; and d",
       "profileUsed": "largecap",
       "metrics": {
-        "pe": 58.788357,
+        "pe": 59.137318,
         "fwdPe": 28.911205,
-        "peg": 2.09,
+        "peg": 2.07,
         "pb": 26.299673,
         "evEbitda": 42.14,
         "fcfYield": 0.0146998072878668,
@@ -250,8 +250,8 @@
         "beta": 1.365,
         "week52High": 1741.0,
         "week52Low": 611.8,
-        "targetMean": 2001.1389,
-        "analystCount": 34,
+        "targetMean": 2020.6364,
+        "analystCount": 33,
         "recommendationKey": "strong_buy",
         "dividendYield": 0.52
       },
@@ -259,19 +259,19 @@
       "scoreLabel": "Positiv",
       "subScores": {
         "Qualität/Moat": 95,
-        "Bewertung": 32,
+        "Bewertung": 33,
         "Wachstum": 90,
         "Bilanz": 94,
-        "Analysten": 95
+        "Analysten": 96
       },
-      "fairValue": 2001.14,
-      "conservativeFairValue": 1700.97,
-      "safetyMarginPct": 0.2532,
-      "buyZone": 1700.97,
-      "sellThreshold": 2301.31,
+      "fairValue": 2020.64,
+      "conservativeFairValue": 1717.54,
+      "safetyMarginPct": 0.2604,
+      "buyZone": 1717.54,
+      "sellThreshold": 2323.73,
       "verdict": "KAUFEN",
       "dataFlags": [
-        "Analysten-Coverage voll (34)",
+        "Analysten-Coverage voll (33)",
         "Fairwert-Methode: Analysten-Kursziel"
       ],
       "stale": false,
@@ -290,7 +290,7 @@
       "summary": "NCR Voyix Corporation provides digital commerce solutions for retail stores and restaurants in the United States, the Americas, the Asia Pacific, Europe, the Middle East, and Africa. The company operates through Retail and Restaurants segments. It offers application program interface connectivity to",
       "profileUsed": "smallcap",
       "metrics": {
-        "pe": 31.357141,
+        "pe": 32.518517,
         "fwdPe": 8.557505,
         "peg": 2.68,
         "pb": 1.3104478,
