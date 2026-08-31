@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-30T12:24:36.575868+02:00",
+  "lastUpdated": "2026-08-31T13:29:17.230296+02:00",
   "source": "yfinance",
   "stocks": {
     "MSFT": {
@@ -15,7 +15,7 @@
       "summary": "Microsoft Corporation, a technology company, develops and supports a portfolio of technology solutions for individuals and businesses worldwide. Its products include operating systems, server applications, business solution applications, software development tools, desktop and server management tool",
       "profileUsed": "largecap",
       "metrics": {
-        "pe": 28.169502,
+        "pe": 28.577076,
         "fwdPe": 21.78441,
         "peg": 1.64,
         "pb": 8.621339,
@@ -125,7 +125,7 @@
       "summary": "Alphabet Inc. offers various products and platforms in the United States, Europe, the Middle East, Africa, the Asia-Pacific, Canada, and Latin America. It operates through Google Services, Google Cloud, and Other Bets segments. The Google Services segment provides products and services, including ad",
       "profileUsed": "largecap",
       "metrics": {
-        "pe": 17.090237,
+        "pe": 17.390366,
         "fwdPe": 23.374542,
         "peg": 0.92,
         "pb": 6.8097687,
@@ -171,21 +171,21 @@
       "ticker": "NESN.SW",
       "name": "NESTLE N",
       "currency": "CHF",
-      "price": 78.62,
-      "previousClose": 78.52,
-      "changePct": 0.13,
-      "marketCap": 202227941376,
+      "price": 78.61,
+      "previousClose": 78.62,
+      "changePct": -0.01,
+      "marketCap": 202202202112,
       "sector": "Consumer Defensive",
       "industry": "Packaged Foods",
       "summary": "Nestlé S.A., together with its subsidiaries, manufactures and distributes food and beverage, and nutritional science products in the United States, Brazil, Mexico, Greater China, the Philippines, India, the United Kingdom, France, Germany, Switzerland, and internationally. The company offers cereals",
       "profileUsed": "largecap",
       "metrics": {
-        "pe": 27.204153,
-        "fwdPe": 16.31828,
+        "pe": 27.200691,
+        "fwdPe": 16.316202,
         "peg": 2.15,
-        "pb": 6.920775,
+        "pb": 6.9198947,
         "evEbitda": 15.753,
-        "fcfYield": 0.021630294776462215,
+        "fcfYield": 0.0216330481978485,
         "roe": 0.26244,
         "grossMargin": 0.45701998,
         "opMargin": 0.16113001,
@@ -211,7 +211,7 @@
       },
       "fairValue": 88.36,
       "conservativeFairValue": 75.11,
-      "safetyMarginPct": 0.1103,
+      "safetyMarginPct": 0.1104,
       "buyZone": 66.27,
       "sellThreshold": 101.62,
       "verdict": "VERKAUFEN",
@@ -220,27 +220,27 @@
         "Fairwert-Methode: Analysten-Kursziel"
       ],
       "stale": false,
-      "priceTime": "2026-08-28T15:30:23Z"
+      "priceTime": "2026-08-31T11:14:15Z"
     },
     "ASML.AS": {
       "ticker": "ASML.AS",
       "name": "ASML HOLDING",
       "currency": "EUR",
-      "price": 1494.4,
-      "previousClose": 1486.4,
-      "changePct": 0.54,
-      "marketCap": 573999022080,
+      "price": 1480.6,
+      "previousClose": 1494.4,
+      "changePct": -0.92,
+      "marketCap": 568698470400,
       "sector": "Technology",
       "industry": "Semiconductor Equipment & Materials",
       "summary": "ASML Holding N.V. provides lithography solutions for the development, production, marketing, sales, upgrading, and servicing of advanced semiconductor equipment systems. The company offers lithography, metrology, and inspection systems. It also provides extreme ultraviolet lithography systems; and d",
       "profileUsed": "largecap",
       "metrics": {
-        "pe": 59.137318,
-        "fwdPe": 28.911205,
+        "pe": 58.591213,
+        "fwdPe": 28.644226,
         "peg": 2.07,
-        "pb": 26.299673,
+        "pb": 26.056808,
         "evEbitda": 42.14,
-        "fcfYield": 0.0146998072878668,
+        "fcfYield": 0.01483681677931237,
         "roe": 0.53942,
         "grossMargin": 0.52733004,
         "opMargin": 0.37057,
@@ -259,14 +259,14 @@
       "scoreLabel": "Positiv",
       "subScores": {
         "Qualität/Moat": 95,
-        "Bewertung": 33,
+        "Bewertung": 34,
         "Wachstum": 90,
         "Bilanz": 94,
-        "Analysten": 96
+        "Analysten": 97
       },
       "fairValue": 2020.64,
       "conservativeFairValue": 1717.54,
-      "safetyMarginPct": 0.2604,
+      "safetyMarginPct": 0.2673,
       "buyZone": 1717.54,
       "sellThreshold": 2323.73,
       "verdict": "KAUFEN",
@@ -275,7 +275,7 @@
         "Fairwert-Methode: Analysten-Kursziel"
       ],
       "stale": false,
-      "priceTime": "2026-08-28T15:36:09Z"
+      "priceTime": "2026-08-31T11:14:15Z"
     },
     "VYX": {
       "ticker": "VYX",
@@ -290,7 +290,7 @@
       "summary": "NCR Voyix Corporation provides digital commerce solutions for retail stores and restaurants in the United States, the Americas, the Asia Pacific, Europe, the Middle East, and Africa. The company operates through Retail and Restaurants segments. It offers application program interface connectivity to",
       "profileUsed": "smallcap",
       "metrics": {
-        "pe": 32.518517,
+        "pe": 31.357141,
         "fwdPe": 8.557505,
         "peg": 2.68,
         "pb": 1.3104478,
