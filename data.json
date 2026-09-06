@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-05T10:54:01.212086+02:00",
+  "lastUpdated": "2026-09-06T11:13:42.236309+02:00",
   "source": "yfinance",
   "stocks": {
     "MSFT": {
@@ -15,7 +15,7 @@
       "summary": "Microsoft Corporation, a technology company, develops and supports a portfolio of technology solutions for individuals and businesses worldwide. Its products include operating systems, server applications, business solution applications, software development tools, desktop and server management tool",
       "profileUsed": "largecap",
       "metrics": {
-        "pe": 27.822943,
+        "pe": 27.853958,
         "fwdPe": 21.19773,
         "peg": 1.66,
         "pb": 8.389155,
@@ -33,7 +33,7 @@
         "targetMean": 572.91516,
         "analystCount": 52,
         "recommendationKey": "strong_buy",
-        "dividendYield": 0.71
+        "dividendYield": 0.73
       },
       "score": 66,
       "scoreLabel": "Positiv",
@@ -70,7 +70,7 @@
       "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and n",
       "profileUsed": "largecap",
       "metrics": {
-        "pe": 28.903389,
+        "pe": 29.159492,
         "fwdPe": 14.902219,
         "peg": 0.58,
         "pb": 24.291891,
@@ -88,7 +88,7 @@
         "targetMean": 327.12808,
         "analystCount": 57,
         "recommendationKey": "strong_buy",
-        "dividendYield": 0.44
+        "dividendYield": 0.43
       },
       "score": 84,
       "scoreLabel": "Stark positiv",
@@ -125,9 +125,9 @@
       "summary": "Alphabet Inc. offers various products and platforms in the United States, Europe, the Middle East, Africa, the Asia-Pacific, Canada, and Latin America. It operates through Google Services, Google Cloud, and Other Bets segments. The Google Services segment provides products and services, including ad",
       "profileUsed": "largecap",
       "metrics": {
-        "pe": 16.982437,
+        "pe": 16.97392,
         "fwdPe": 22.785429,
-        "peg": 1.24,
+        "peg": 1.27,
         "pb": 6.650031,
         "evEbitda": 23.306,
         "fcfYield": 0.005475505958768597,
@@ -139,7 +139,7 @@
         "earnGrowth": 2.94,
         "beta": 1.225,
         "week52High": 408.61,
-        "week52Low": 231.9,
+        "week52Low": 233.23,
         "targetMean": 428.06668,
         "analystCount": 54,
         "recommendationKey": "strong_buy",
@@ -180,7 +180,7 @@
       "summary": "Nestlé S.A., together with its subsidiaries, manufactures and distributes food and beverage, and nutritional science products in the United States, Brazil, Mexico, Greater China, the Philippines, India, the United Kingdom, France, Germany, Switzerland, and internationally. The company offers cereals",
       "profileUsed": "largecap",
       "metrics": {
-        "pe": 26.910652,
+        "pe": 27.096884,
         "fwdPe": 16.260448,
         "peg": 2.15,
         "pb": 6.893486,
@@ -198,7 +198,7 @@
         "targetMean": 88.36364,
         "analystCount": 22,
         "recommendationKey": "buy",
-        "dividendYield": 3.98
+        "dividendYield": 3.96
       },
       "score": 39,
       "scoreLabel": "Zurückhaltend",
@@ -235,7 +235,7 @@
       "summary": "ASML Holding N.V. provides lithography solutions for the development, production, marketing, sales, upgrading, and servicing of advanced semiconductor equipment systems. The company offers lithography, metrology, and inspection systems. It also provides extreme ultraviolet lithography systems; and d",
       "profileUsed": "largecap",
       "metrics": {
-        "pe": 57.590267,
+        "pe": 57.79441,
         "fwdPe": 28.377377,
         "peg": 1.47,
         "pb": 25.824505,
@@ -249,7 +249,7 @@
         "earnGrowth": 0.285,
         "beta": 1.363,
         "week52High": 1741.0,
-        "week52Low": 653.1,
+        "week52Low": 664.1,
         "targetMean": 2041.8485,
         "analystCount": 33,
         "recommendationKey": "strong_buy",
@@ -290,10 +290,10 @@
       "summary": "NCR Voyix Corporation provides digital commerce solutions for retail stores and restaurants in the United States, the Americas, the Asia Pacific, Europe, the Middle East, and Africa. The company operates through Retail and Restaurants segments. It offers application program interface connectivity to",
       "profileUsed": "smallcap",
       "metrics": {
-        "pe": 31.517244,
+        "pe": 32.642857,
         "fwdPe": 8.908382,
         "peg": 2.68,
-        "pb": 1.3641793,
+        "pb": 1.3580981,
         "evEbitda": 10.135,
         "fcfYield": 0.17136057120693324,
         "roe": 0.05272,
