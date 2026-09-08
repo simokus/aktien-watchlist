@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-07T12:02:15.043345+02:00",
+  "lastUpdated": "2026-09-08T11:27:53.895235+02:00",
   "source": "yfinance",
   "stocks": {
     "MSFT": {
@@ -171,21 +171,21 @@
       "ticker": "NESN.SW",
       "name": "NESTLE N",
       "currency": "CHF",
-      "price": 78.28,
-      "previousClose": 78.31,
-      "changePct": -0.04,
-      "marketCap": 201353363456,
+      "price": 80.77,
+      "previousClose": 78.76,
+      "changePct": 2.55,
+      "marketCap": 207758196736,
       "sector": "Consumer Defensive",
       "industry": "Packaged Foods",
       "summary": "Nestlé S.A., together with its subsidiaries, manufactures and distributes food and beverage, and nutritional science products in the United States, Brazil, Mexico, Greater China, the Philippines, India, the United Kingdom, France, Germany, Switzerland, and internationally. The company offers cereals",
       "profileUsed": "largecap",
       "metrics": {
-        "pe": 27.086504,
-        "fwdPe": 16.254221,
+        "pe": 27.756012,
+        "fwdPe": 16.769054,
         "peg": 2.15,
-        "pb": 6.8908453,
-        "evEbitda": 15.704,
-        "fcfYield": 0.02172424591733163,
+        "pb": 7.110035,
+        "evEbitda": 15.775,
+        "fcfYield": 0.02105452421479377,
         "roe": 0.26244,
         "grossMargin": 0.45701998,
         "opMargin": 0.16113001,
@@ -200,18 +200,18 @@
         "recommendationKey": "buy",
         "dividendYield": 3.96
       },
-      "score": 39,
+      "score": 38,
       "scoreLabel": "Zurückhaltend",
       "subScores": {
         "Qualität/Moat": 58,
-        "Bewertung": 42,
+        "Bewertung": 40,
         "Wachstum": 0,
         "Bilanz": 6,
-        "Analysten": 66
+        "Analysten": 64
       },
       "fairValue": 88.36,
       "conservativeFairValue": 75.11,
-      "safetyMarginPct": 0.1141,
+      "safetyMarginPct": 0.0859,
       "buyZone": 66.27,
       "sellThreshold": 101.62,
       "verdict": "VERKAUFEN",
@@ -220,27 +220,27 @@
         "Fairwert-Methode: Analysten-Kursziel"
       ],
       "stale": false,
-      "priceTime": "2026-09-07T09:47:02Z"
+      "priceTime": "2026-09-08T09:12:50Z"
     },
     "ASML.AS": {
       "ticker": "ASML.AS",
       "name": "ASML HOLDING",
       "currency": "EUR",
-      "price": 1487.6,
-      "previousClose": 1467.4,
-      "changePct": 1.38,
-      "marketCap": 571387150336,
+      "price": 1511.0,
+      "previousClose": 1500.4,
+      "changePct": 0.71,
+      "marketCap": 580375085056,
       "sector": "Technology",
       "industry": "Semiconductor Equipment & Materials",
       "summary": "ASML Holding N.V. provides lithography solutions for the development, production, marketing, sales, upgrading, and servicing of advanced semiconductor equipment systems. The company offers lithography, metrology, and inspection systems. It also provides extreme ultraviolet lithography systems; and d",
       "profileUsed": "largecap",
       "metrics": {
-        "pe": 58.589996,
-        "fwdPe": 28.768013,
+        "pe": 59.51162,
+        "fwdPe": 29.220535,
         "peg": 1.52,
-        "pb": 26.18,
-        "evEbitda": 41.371,
-        "fcfYield": 0.014767001678351162,
+        "pb": 26.591814,
+        "evEbitda": 42.311,
+        "fcfYield": 0.014538313627274084,
         "roe": 0.53942,
         "grossMargin": 0.52733004,
         "opMargin": 0.37057,
@@ -249,24 +249,24 @@
         "earnGrowth": 0.285,
         "beta": 1.363,
         "week52High": 1741.0,
-        "week52Low": 664.1,
+        "week52Low": 674.0,
         "targetMean": 2041.8485,
         "analystCount": 33,
         "recommendationKey": "strong_buy",
-        "dividendYield": 0.55
+        "dividendYield": 0.53
       },
-      "score": 81,
+      "score": 80,
       "scoreLabel": "Stark positiv",
       "subScores": {
         "Qualität/Moat": 95,
-        "Bewertung": 38,
+        "Bewertung": 37,
         "Wachstum": 90,
         "Bilanz": 94,
-        "Analysten": 98
+        "Analysten": 96
       },
       "fairValue": 2041.85,
       "conservativeFairValue": 1735.57,
-      "safetyMarginPct": 0.2714,
+      "safetyMarginPct": 0.26,
       "buyZone": 1735.57,
       "sellThreshold": 2348.13,
       "verdict": "KAUFEN",
@@ -275,7 +275,7 @@
         "Fairwert-Methode: Analysten-Kursziel"
       ],
       "stale": false,
-      "priceTime": "2026-09-07T09:47:13Z"
+      "priceTime": "2026-09-08T09:12:52Z"
     },
     "VYX": {
       "ticker": "VYX",
