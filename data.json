@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-12T11:08:05.529551+02:00",
+  "lastUpdated": "2026-09-13T12:06:06.679249+02:00",
   "source": "yfinance",
   "stocks": {
     "MSFT": {
@@ -15,9 +15,9 @@
       "summary": "Microsoft Corporation, a technology company, develops and supports a portfolio of technology solutions for individuals and businesses worldwide. Its products include operating systems, server applications, business solution applications, software development tools, desktop and server management tool",
       "profileUsed": "largecap",
       "metrics": {
-        "pe": 27.39801,
+        "pe": 27.62709,
         "fwdPe": 21.025343,
-        "peg": 1.6,
+        "peg": 1.61,
         "pb": 8.320827,
         "evEbitda": 19.215,
         "fcfYield": 0.004495664940639215,
@@ -33,7 +33,7 @@
         "targetMean": 572.91516,
         "analystCount": 52,
         "recommendationKey": "strong_buy",
-        "dividendYield": 0.74
+        "dividendYield": 0.73
       },
       "score": 67,
       "scoreLabel": "Positiv",
@@ -72,7 +72,7 @@
       "metrics": {
         "pe": 27.631645,
         "fwdPe": 14.022135,
-        "peg": 0.59,
+        "peg": 0.46,
         "pb": 23.019087,
         "evEbitda": 26.021,
         "fcfYield": 0.007931984607549021,
@@ -85,8 +85,8 @@
         "beta": 2.217,
         "week52High": 236.54,
         "week52Low": 164.27,
-        "targetMean": 327.6544,
-        "analystCount": 57,
+        "targetMean": 327.17758,
+        "analystCount": 58,
         "recommendationKey": "strong_buy",
         "dividendYield": 0.46
       },
@@ -99,14 +99,14 @@
         "Bilanz": 80,
         "Analysten": 100
       },
-      "fairValue": 327.65,
-      "conservativeFairValue": 278.51,
-      "safetyMarginPct": 0.3338,
-      "buyZone": 278.51,
-      "sellThreshold": 376.8,
+      "fairValue": 327.18,
+      "conservativeFairValue": 278.1,
+      "safetyMarginPct": 0.3328,
+      "buyZone": 278.1,
+      "sellThreshold": 376.25,
       "verdict": "KAUFEN",
       "dataFlags": [
-        "Analysten-Coverage voll (57)",
+        "Analysten-Coverage voll (58)",
         "Fairwert-Methode: Analysten-Kursziel"
       ],
       "stale": false,
@@ -125,9 +125,9 @@
       "summary": "Alphabet Inc. offers various products and platforms in the United States, Europe, the Middle East, Africa, the Asia-Pacific, Canada, and Latin America. It operates through Google Services, Google Cloud, and Other Bets segments. The Google Services segment provides products and services, including ad",
       "profileUsed": "largecap",
       "metrics": {
-        "pe": 16.69132,
+        "pe": 16.975927,
         "fwdPe": 22.758093,
-        "peg": 1.22,
+        "peg": 1.21,
         "pb": 6.6508174,
         "evEbitda": 23.309,
         "fcfYield": 0.005474858628874616,
@@ -180,7 +180,7 @@
       "summary": "Nestlé S.A., together with its subsidiaries, manufactures and distributes food and beverage, and nutritional science products in the United States, Brazil, Mexico, Greater China, the Philippines, India, the United Kingdom, France, Germany, Switzerland, and internationally. The company offers cereals",
       "profileUsed": "largecap",
       "metrics": {
-        "pe": 26.92361,
+        "pe": 26.83045,
         "fwdPe": 16.09846,
         "peg": 2.15,
         "pb": 6.8257046,
@@ -198,7 +198,7 @@
         "targetMean": 88.36364,
         "analystCount": 22,
         "recommendationKey": "buy",
-        "dividendYield": 3.99
+        "dividendYield": 4.0
       },
       "score": 39,
       "scoreLabel": "Zurückhaltend",
@@ -235,9 +235,9 @@
       "summary": "ASML Holding N.V. provides lithography solutions for the development, production, marketing, sales, upgrading, and servicing of advanced semiconductor equipment systems. The company offers lithography, metrology, and inspection systems. It also provides extreme ultraviolet lithography systems; and d",
       "profileUsed": "largecap",
       "metrics": {
-        "pe": 58.296528,
+        "pe": 58.13606,
         "fwdPe": 28.583317,
-        "peg": 1.55,
+        "peg": 1.53,
         "pb": 26.018093,
         "evEbitda": 41.684,
         "fcfYield": 0.014858895406287263,
@@ -249,7 +249,7 @@
         "earnGrowth": 0.285,
         "beta": 1.363,
         "week52High": 1741.0,
-        "week52Low": 681.5,
+        "week52Low": 695.2,
         "targetMean": 2023.9393,
         "analystCount": 33,
         "recommendationKey": "strong_buy",
@@ -290,10 +290,10 @@
       "summary": "NCR Voyix Corporation provides digital commerce solutions for retail stores and restaurants in the United States, the Americas, the Asia Pacific, Europe, the Middle East, and Africa. The company operates through Retail and Restaurants segments. It offers application program interface connectivity to",
       "profileUsed": "smallcap",
       "metrics": {
-        "pe": 28.5,
+        "pe": 30.535715,
         "fwdPe": 8.333333,
         "peg": 2.68,
-        "pb": 1.2704309,
+        "pb": 1.2761195,
         "evEbitda": 9.811,
         "fcfYield": 0.18318545355461202,
         "roe": 0.05272,
@@ -307,7 +307,7 @@
         "week52Low": 6.02,
         "targetMean": 12.95833,
         "analystCount": 6,
-        "recommendationKey": "buy",
+        "recommendationKey": "none",
         "dividendYield": null
       },
       "score": 46,
