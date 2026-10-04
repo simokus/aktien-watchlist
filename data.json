@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-03T12:17:34.784406+02:00",
+  "lastUpdated": "2026-10-04T13:01:34.754055+02:00",
   "source": "yfinance",
   "stocks": {
     "MSFT": {
@@ -17,7 +17,7 @@
       "metrics": {
         "pe": 28.57703,
         "fwdPe": 21.885357,
-        "peg": 1.67,
+        "peg": 1.68,
         "pb": 8.688492,
         "evEbitda": 20.052,
         "fcfYield": 0.00430542434115475,
@@ -70,9 +70,9 @@
       "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and n",
       "profileUsed": "largecap",
       "metrics": {
-        "pe": 29.17082,
+        "pe": 29.576487,
         "fwdPe": 14.905945,
-        "peg": 0.28,
+        "peg": 0.29,
         "pb": 24.670464,
         "evEbitda": 27.896,
         "fcfYield": 0.007401038091639369,
@@ -83,7 +83,7 @@
         "revGrowth": 1.059,
         "earnGrowth": 1.278,
         "beta": 2.217,
-        "week52High": 237.87,
+        "week52High": 237.88,
         "week52Low": 164.27,
         "targetMean": 327.7,
         "analystCount": 59,
@@ -110,7 +110,7 @@
         "Fairwert-Methode: Analysten-Kursziel"
       ],
       "stale": false,
-      "priceTime": "2026-10-02T20:00:00Z"
+      "priceTime": "2026-10-02T20:00:01Z"
     },
     "GOOGL": {
       "ticker": "GOOGL",
@@ -125,9 +125,9 @@
       "summary": "Alphabet Inc. offers various products and platforms in the United States, Europe, the Middle East, Africa, the Asia-Pacific, Canada, and Latin America. It operates through Google Services, Google Cloud, and Other Bets segments. The Google Services segment provides products and services, including ad",
       "profileUsed": "largecap",
       "metrics": {
-        "pe": 16.979733,
+        "pe": 17.243977,
         "fwdPe": 22.791302,
-        "peg": 1.21,
+        "peg": 1.23,
         "pb": 6.749057,
         "evEbitda": 23.662,
         "fcfYield": 0.0053951665331085,
@@ -235,9 +235,9 @@
       "summary": "ASML Holding N.V. provides lithography solutions for the development, production, marketing, sales, upgrading, and servicing of advanced semiconductor equipment systems. The company offers lithography, metrology, and inspection systems. It also provides extreme ultraviolet lithography systems; and d",
       "profileUsed": "largecap",
       "metrics": {
-        "pe": 65.10437,
+        "pe": 64.92538,
         "fwdPe": 31.953224,
-        "peg": 1.11,
+        "peg": 1.15,
         "pb": 29.090845,
         "evEbitda": 46.656,
         "fcfYield": 0.01328940814985938,
