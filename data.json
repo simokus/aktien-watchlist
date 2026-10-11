@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-10T13:02:14.229551+02:00",
+  "lastUpdated": "2026-10-11T13:19:28.668867+02:00",
   "source": "yfinance",
   "stocks": {
     "MSFT": {
@@ -15,11 +15,11 @@
       "summary": "Microsoft Corporation, a technology company, develops and supports a portfolio of technology solutions for individuals and businesses worldwide. Its products include operating systems, server applications, business solution applications, software development tools, desktop and server management tool",
       "profileUsed": "largecap",
       "metrics": {
-        "pe": 29.111536,
+        "pe": 29.808912,
         "fwdPe": 22.59842,
-        "peg": 1.7,
+        "peg": 1.72,
         "pb": 8.98296,
-        "evEbitda": 20.723,
+        "evEbitda": 20.52,
         "fcfYield": 0.004164289472985362,
         "roe": 0.34039003,
         "grossMargin": 0.67944,
@@ -33,7 +33,7 @@
         "targetMean": 587.6338,
         "analystCount": 53,
         "recommendationKey": "strong_buy",
-        "dividendYield": 0.73
+        "dividendYield": 0.74
       },
       "score": 64,
       "scoreLabel": "Neutral",
@@ -72,9 +72,9 @@
       "metrics": {
         "pe": 28.986094,
         "fwdPe": 14.406897,
-        "peg": 0.28,
+        "peg": 0.29,
         "pb": 24.178003,
-        "evEbitda": 27.337,
+        "evEbitda": 28.318,
         "fcfYield": 0.007551783234552327,
         "roe": 1.17211,
         "grossMargin": 0.74674004,
@@ -88,7 +88,7 @@
         "targetMean": 328.71695,
         "analystCount": 59,
         "recommendationKey": "strong_buy",
-        "dividendYield": 0.44
+        "dividendYield": 0.42
       },
       "score": 84,
       "scoreLabel": "Stark positiv",
@@ -126,10 +126,10 @@
       "profileUsed": "largecap",
       "metrics": {
         "pe": 17.644756,
-        "fwdPe": 23.33272,
-        "peg": 1.22,
+        "fwdPe": 23.115559,
+        "peg": 1.24,
         "pb": 6.909384,
-        "evEbitda": 24.238,
+        "evEbitda": 24.156,
         "fcfYield": 0.005269975697405305,
         "roe": 0.48676,
         "grossMargin": 0.60897,
@@ -139,7 +139,7 @@
         "earnGrowth": 2.94,
         "beta": 1.211,
         "week52High": 408.61,
-        "week52Low": 235.84,
+        "week52Low": 239.71,
         "targetMean": 429.47406,
         "analystCount": 54,
         "recommendationKey": "strong_buy",
@@ -180,11 +180,11 @@
       "summary": "Nestlé S.A., together with its subsidiaries, manufactures and distributes food and beverage, and nutritional science products in the United States, Brazil, Mexico, Greater China, the Philippines, India, the United Kingdom, France, Germany, Switzerland, and internationally. The company offers cereals",
       "profileUsed": "largecap",
       "metrics": {
-        "pe": 26.311419,
+        "pe": 26.402777,
         "fwdPe": 15.7741995,
-        "peg": 1.85,
+        "peg": 1.83,
         "pb": 6.693662,
-        "evEbitda": 15.349,
+        "evEbitda": 15.343,
         "fcfYield": 0.022364201404025008,
         "roe": 0.26244,
         "grossMargin": 0.45701998,
@@ -236,10 +236,10 @@
       "profileUsed": "largecap",
       "metrics": {
         "pe": 60.643696,
-        "fwdPe": 30.959639,
+        "fwdPe": 30.845337,
         "peg": 1.14,
         "pb": 28.186266,
-        "evEbitda": 45.193,
+        "evEbitda": 45.438,
         "fcfYield": 0.013715903451957473,
         "roe": 0.53942,
         "grossMargin": 0.52733004,
@@ -249,11 +249,11 @@
         "earnGrowth": 0.285,
         "beta": 1.302,
         "week52High": 1741.0,
-        "week52Low": 813.8,
-        "targetMean": 2057.3438,
+        "week52Low": 822.2,
+        "targetMean": 2051.0938,
         "analystCount": 32,
         "recommendationKey": "strong_buy",
-        "dividendYield": 0.49
+        "dividendYield": 0.48
       },
       "score": 79,
       "scoreLabel": "Positiv",
@@ -262,13 +262,13 @@
         "Bewertung": 36,
         "Wachstum": 90,
         "Bilanz": 94,
-        "Analysten": 91
+        "Analysten": 90
       },
-      "fairValue": 2057.34,
-      "conservativeFairValue": 1748.74,
-      "safetyMarginPct": 0.2215,
-      "buyZone": 1748.74,
-      "sellThreshold": 2365.95,
+      "fairValue": 2051.09,
+      "conservativeFairValue": 1743.43,
+      "safetyMarginPct": 0.2191,
+      "buyZone": 1743.43,
+      "sellThreshold": 2358.76,
       "verdict": "KAUFEN",
       "dataFlags": [
         "Analysten-Coverage voll (32)",
@@ -290,11 +290,11 @@
       "summary": "NCR Voyix Corporation provides digital commerce solutions for retail stores and restaurants in the United States, the Americas, the Asia Pacific, Europe, the Middle East, and Africa. The company operates through Retail and Restaurants segments. It offers application program interface connectivity to",
       "profileUsed": "smallcap",
       "metrics": {
-        "pe": 24.655174,
+        "pe": 25.535715,
         "fwdPe": 6.968811,
         "peg": 2.68,
         "pb": 1.0624071,
-        "evEbitda": 9.041,
+        "evEbitda": 8.799,
         "fcfYield": 0.21905393239298523,
         "roe": 0.05272,
         "grossMargin": 0.25825,
