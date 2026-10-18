@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-17T11:06:56.075512+02:00",
+  "lastUpdated": "2026-10-18T11:24:37.339947+02:00",
   "source": "yfinance",
   "stocks": {
     "MSFT": {
@@ -15,9 +15,9 @@
       "summary": "Microsoft Corporation, a technology company, develops and supports a portfolio of technology solutions for individuals and businesses worldwide. Its products include operating systems, server applications, business solution applications, software development tools, desktop and server management tool",
       "profileUsed": "largecap",
       "metrics": {
-        "pe": 29.805634,
-        "fwdPe": 22.347225,
-        "peg": 1.75,
+        "pe": 29.473536,
+        "fwdPe": 22.302853,
+        "peg": 1.72,
         "pb": 8.881894,
         "evEbitda": 20.493,
         "fcfYield": 0.004211674512249148,
@@ -72,7 +72,7 @@
       "metrics": {
         "pe": 27.070797,
         "fwdPe": 13.454941,
-        "peg": 0.27,
+        "peg": 0.26,
         "pb": 22.580408,
         "evEbitda": 25.523,
         "fcfYield": 0.008086082796152272,
@@ -127,7 +127,7 @@
       "metrics": {
         "pe": 17.089312,
         "fwdPe": 22.276,
-        "peg": 1.23,
+        "peg": 1.2,
         "pb": 6.6918817,
         "evEbitda": 23.456,
         "fcfYield": 0.0054412629293539875,
@@ -182,7 +182,7 @@
       "metrics": {
         "pe": 28.52249,
         "fwdPe": 17.09978,
-        "peg": 1.97,
+        "peg": 2.01,
         "pb": 7.256162,
         "evEbitda": 16.348,
         "fcfYield": 0.020630522058018415,
@@ -200,11 +200,11 @@
         "recommendationKey": "buy",
         "dividendYield": 3.76
       },
-      "score": 38,
+      "score": 37,
       "scoreLabel": "Zurückhaltend",
       "subScores": {
         "Qualität/Moat": 58,
-        "Bewertung": 40,
+        "Bewertung": 39,
         "Wachstum": 0,
         "Bilanz": 6,
         "Analysten": 62
@@ -220,7 +220,7 @@
         "Fairwert-Methode: Analysten-Kursziel"
       ],
       "stale": false,
-      "priceTime": "2026-10-16T15:31:42Z"
+      "priceTime": "2026-10-16T15:31:41Z"
     },
     "ASML.AS": {
       "ticker": "ASML.AS",
@@ -229,18 +229,18 @@
       "price": 1477.2,
       "previousClose": 1464.2,
       "changePct": 0.89,
-      "marketCap": 567392468992,
+      "marketCap": 569339019264,
       "sector": "Technology",
       "industry": "Semiconductor Equipment & Materials",
       "summary": "ASML Holding N.V. provides lithography solutions for the development, production, marketing, sales, upgrading, and servicing of advanced semiconductor equipment systems. The company offers lithography, metrology, and inspection systems. It also provides extreme ultraviolet lithography systems; and d",
       "profileUsed": "largecap",
       "metrics": {
-        "pe": 42.60744,
+        "pe": 42.229843,
         "fwdPe": 26.411905,
-        "peg": 0.95,
+        "peg": 0.96,
         "pb": 25.64895,
         "evEbitda": 34.308,
-        "fcfYield": 0.01828386013376267,
+        "fcfYield": 0.018221348252945867,
         "roe": 0.65636003,
         "grossMargin": 0.54337,
         "opMargin": 0.44356,
