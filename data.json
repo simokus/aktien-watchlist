@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-24T11:22:00.012417+02:00",
+  "lastUpdated": "2026-10-25T10:39:46.007530+01:00",
   "source": "yfinance",
   "stocks": {
     "MSFT": {
@@ -16,8 +16,8 @@
       "profileUsed": "largecap",
       "metrics": {
         "pe": 29.220612,
-        "fwdPe": 22.127527,
-        "peg": 1.69,
+        "fwdPe": 22.128946,
+        "peg": 1.7,
         "pb": 8.805675,
         "evEbitda": 20.319,
         "fcfYield": 0.004248129496502748,
@@ -127,7 +127,7 @@
       "metrics": {
         "pe": 16.066732,
         "fwdPe": 20.84885,
-        "peg": 1.14,
+        "peg": 1.12,
         "pb": 6.2914567,
         "evEbitda": 22.017,
         "fcfYield": 0.005787575979403326,
@@ -139,7 +139,7 @@
         "earnGrowth": 2.94,
         "beta": 1.211,
         "week52High": 408.61,
-        "week52Low": 255.32,
+        "week52Low": 264.28,
         "targetMean": 429.12222,
         "analystCount": 54,
         "recommendationKey": "strong_buy",
@@ -149,7 +149,7 @@
       "scoreLabel": "Stark positiv",
       "subScores": {
         "Qualität/Moat": 81,
-        "Bewertung": 48,
+        "Bewertung": 49,
         "Wachstum": 98,
         "Bilanz": 97,
         "Analysten": 95
@@ -181,8 +181,8 @@
       "profileUsed": "largecap",
       "metrics": {
         "pe": 28.961935,
-        "fwdPe": 17.424068,
-        "peg": 2.05,
+        "fwdPe": 17.508188,
+        "peg": 2.04,
         "pb": 7.3679576,
         "evEbitda": 16.547,
         "fcfYield": 0.02031748980179828,
@@ -235,9 +235,9 @@
       "summary": "ASML Holding N.V. provides lithography solutions for the development, production, marketing, sales, upgrading, and servicing of advanced semiconductor equipment systems. The company offers lithography, metrology, and inspection systems. It also provides extreme ultraviolet lithography systems; and d",
       "profileUsed": "largecap",
       "metrics": {
-        "pe": 39.875317,
+        "pe": 40.228703,
         "fwdPe": 25.160326,
-        "peg": 0.9,
+        "peg": 0.89,
         "pb": 24.433525,
         "evEbitda": 32.651,
         "fcfYield": 0.019127752966678322,
@@ -290,7 +290,7 @@
       "summary": "NCR Voyix Corporation provides digital commerce solutions for retail stores and restaurants in the United States, the Americas, the Asia Pacific, Europe, the Middle East, and Africa. The company operates through Retail and Restaurants segments. It offers application program interface connectivity to",
       "profileUsed": "smallcap",
       "metrics": {
-        "pe": 27.966667,
+        "pe": 29.964287,
         "fwdPe": 8.177388,
         "peg": 2.68,
         "pb": 1.2466568,
@@ -303,7 +303,7 @@
         "revGrowth": -0.208,
         "earnGrowth": null,
         "beta": 1.526,
-        "week52High": 12.07,
+        "week52High": 12.02,
         "week52Low": 6.02,
         "targetMean": 12.66667,
         "analystCount": 6,
@@ -316,7 +316,7 @@
         "Qualität/Burggraben": 19,
         "Bilanz / Überlebensfähigkeit": 0,
         "Bewertungsabschlag": 83,
-        "Setup/Stabilisierung": 94
+        "Setup/Stabilisierung": 93
       },
       "fairValue": 12.67,
       "conservativeFairValue": 10.77,
