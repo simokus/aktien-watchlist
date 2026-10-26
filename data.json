@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-25T10:39:46.007530+01:00",
+  "lastUpdated": "2026-10-26T11:53:20.599843+01:00",
   "source": "yfinance",
   "stocks": {
     "MSFT": {
@@ -171,21 +171,21 @@
       "ticker": "NESN.SW",
       "name": "NESTLE N",
       "currency": "CHF",
-      "price": 83.7,
-      "previousClose": 84.37,
-      "changePct": -0.79,
-      "marketCap": 215294803968,
+      "price": 83.15,
+      "previousClose": 83.7,
+      "changePct": -0.66,
+      "marketCap": 213880094720,
       "sector": "Consumer Defensive",
       "industry": "Packaged Foods",
       "summary": "Nestlé S.A., together with its subsidiaries, manufactures and distributes food and beverage, and nutritional science products in the United States, Brazil, Mexico, Greater China, the Philippines, India, the United Kingdom, France, Germany, Switzerland, and internationally. The company offers cereals",
       "profileUsed": "largecap",
       "metrics": {
-        "pe": 28.961935,
-        "fwdPe": 17.508188,
+        "pe": 28.771626,
+        "fwdPe": 17.309574,
         "peg": 2.04,
-        "pb": 7.3679576,
+        "pb": 7.3195424,
         "evEbitda": 16.547,
-        "fcfYield": 0.02031748980179828,
+        "fcfYield": 0.0204518797774357,
         "roe": 0.26244,
         "grossMargin": 0.45701998,
         "opMargin": 0.16113001,
@@ -204,14 +204,14 @@
       "scoreLabel": "Zurückhaltend",
       "subScores": {
         "Qualität/Moat": 58,
-        "Bewertung": 38,
+        "Bewertung": 39,
         "Wachstum": 0,
         "Bilanz": 6,
-        "Analysten": 61
+        "Analysten": 62
       },
       "fairValue": 89.04,
       "conservativeFairValue": 75.68,
-      "safetyMarginPct": 0.0599,
+      "safetyMarginPct": 0.0661,
       "buyZone": 66.78,
       "sellThreshold": 102.39,
       "verdict": "VERKAUFEN",
@@ -220,27 +220,27 @@
         "Fairwert-Methode: Analysten-Kursziel"
       ],
       "stale": false,
-      "priceTime": "2026-10-23T15:30:11Z"
+      "priceTime": "2026-10-26T10:37:29Z"
     },
     "ASML.AS": {
       "ticker": "ASML.AS",
       "name": "ASML HOLDING",
       "currency": "EUR",
-      "price": 1407.2,
-      "previousClose": 1419.6,
-      "changePct": -0.87,
-      "marketCap": 542359814144,
+      "price": 1409.8,
+      "previousClose": 1405.4,
+      "changePct": 0.31,
+      "marketCap": 543361925120,
       "sector": "Technology",
       "industry": "Semiconductor Equipment & Materials",
       "summary": "ASML Holding N.V. provides lithography solutions for the development, production, marketing, sales, upgrading, and servicing of advanced semiconductor equipment systems. The company offers lithography, metrology, and inspection systems. It also provides extreme ultraviolet lithography systems; and d",
       "profileUsed": "largecap",
       "metrics": {
-        "pe": 40.228703,
-        "fwdPe": 25.160326,
+        "pe": 40.303032,
+        "fwdPe": 25.206816,
         "peg": 0.89,
-        "pb": 24.433525,
+        "pb": 24.47867,
         "evEbitda": 32.651,
-        "fcfYield": 0.019127752966678322,
+        "fcfYield": 0.019092476053983544,
         "roe": 0.65636003,
         "grossMargin": 0.54337,
         "opMargin": 0.44356,
@@ -266,7 +266,7 @@
       },
       "fairValue": 2097.45,
       "conservativeFairValue": 1782.84,
-      "safetyMarginPct": 0.3291,
+      "safetyMarginPct": 0.3279,
       "buyZone": 1782.84,
       "sellThreshold": 2412.07,
       "verdict": "KAUFEN",
@@ -275,7 +275,7 @@
         "Fairwert-Methode: Analysten-Kursziel"
       ],
       "stale": false,
-      "priceTime": "2026-10-23T15:38:57Z"
+      "priceTime": "2026-10-26T10:38:08Z"
     },
     "VYX": {
       "ticker": "VYX",
@@ -290,7 +290,7 @@
       "summary": "NCR Voyix Corporation provides digital commerce solutions for retail stores and restaurants in the United States, the Americas, the Asia Pacific, Europe, the Middle East, and Africa. The company operates through Retail and Restaurants segments. It offers application program interface connectivity to",
       "profileUsed": "smallcap",
       "metrics": {
-        "pe": 29.964287,
+        "pe": 27.966667,
         "fwdPe": 8.177388,
         "peg": 2.68,
         "pb": 1.2466568,
