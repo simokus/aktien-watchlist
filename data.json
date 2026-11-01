@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-31T11:48:13.280002+01:00",
+  "lastUpdated": "2026-11-01T12:44:58.573502+01:00",
   "source": "yfinance",
   "stocks": {
     "MSFT": {
@@ -16,8 +16,8 @@
       "profileUsed": "largecap",
       "metrics": {
         "pe": 27.239561,
-        "fwdPe": 21.618698,
-        "peg": 1.72,
+        "fwdPe": 21.62332,
+        "peg": 1.69,
         "pb": 8.238385,
         "evEbitda": 19.18,
         "fcfYield": 0.0007725169880749924,
@@ -30,7 +30,7 @@
         "beta": 1.099,
         "week52High": 551.15,
         "week52Low": 349.2,
-        "targetMean": 629.6884,
+        "targetMean": 631.09235,
         "analystCount": 51,
         "recommendationKey": "strong_buy",
         "dividendYield": 0.75
@@ -44,11 +44,11 @@
         "Bilanz": 44,
         "Analysten": 85
       },
-      "fairValue": 629.69,
-      "conservativeFairValue": 535.24,
-      "safetyMarginPct": 0.1712,
-      "buyZone": 535.24,
-      "sellThreshold": 724.14,
+      "fairValue": 631.09,
+      "conservativeFairValue": 536.43,
+      "safetyMarginPct": 0.173,
+      "buyZone": 536.43,
+      "sellThreshold": 725.76,
       "verdict": "KAUFEN",
       "dataFlags": [
         "Analysten-Coverage voll (51)",
@@ -72,7 +72,7 @@
       "metrics": {
         "pe": 25.87105,
         "fwdPe": 12.858633,
-        "peg": 0.26,
+        "peg": 0.25,
         "pb": 21.57967,
         "evEbitda": 24.387,
         "fcfYield": 0.008461068205512288,
@@ -182,7 +182,7 @@
       "metrics": {
         "pe": 29.307957,
         "fwdPe": 17.774103,
-        "peg": 2.05,
+        "peg": 2.1,
         "pb": 7.455986,
         "evEbitda": 16.703,
         "fcfYield": 0.02007761516090148,
@@ -237,7 +237,7 @@
       "metrics": {
         "pe": 40.388794,
         "fwdPe": 25.2606,
-        "peg": 0.9,
+        "peg": 0.84,
         "pb": 24.53076,
         "evEbitda": 32.784,
         "fcfYield": 0.01905193432765799,
