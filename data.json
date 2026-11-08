@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-07T12:36:13.092549+01:00",
+  "lastUpdated": "2026-11-08T12:47:34.859954+01:00",
   "source": "yfinance",
   "stocks": {
     "MSFT": {
@@ -127,7 +127,7 @@
       "metrics": {
         "pe": 14.871018,
         "fwdPe": 18.450144,
-        "peg": 1.0,
+        "peg": 1.01,
         "pb": 5.308504,
         "evEbitda": 18.351,
         "fcfYield": -0.00033203990011805925,
@@ -237,7 +237,7 @@
       "metrics": {
         "pe": 36.695255,
         "fwdPe": 22.74508,
-        "peg": 0.73,
+        "peg": 0.75,
         "pb": 22.287432,
         "evEbitda": 29.725,
         "fcfYield": 0.02096959629276547,
@@ -284,7 +284,7 @@
       "price": 9.75,
       "previousClose": 9.86,
       "changePct": -1.12,
-      "marketCap": 1346181504,
+      "marketCap": 1324637952,
       "sector": "Technology",
       "industry": "Information Technology Services",
       "summary": "NCR Voyix Corporation provides digital commerce solutions for retail stores and restaurants in the United States, the Americas, the Asia Pacific, Europe, the Middle East, and Africa. The company operates through Retail and Restaurants segments. It offers application program interface connectivity to",
@@ -295,7 +295,7 @@
         "peg": 2.68,
         "pb": 1.4030796,
         "evEbitda": 9.289,
-        "fcfYield": 0.1667680021846445,
+        "fcfYield": 0.16948027169313656,
         "roe": 0.0806,
         "grossMargin": 0.27763999,
         "opMargin": 0.07792,
@@ -305,24 +305,24 @@
         "beta": 1.509,
         "week52High": 11.51,
         "week52Low": 6.02,
-        "targetMean": 12.66667,
+        "targetMean": 13.16667,
         "analystCount": 6,
-        "recommendationKey": "none",
+        "recommendationKey": "buy",
         "dividendYield": 0.0
       },
-      "score": 36,
+      "score": 37,
       "scoreLabel": "Zurückhaltend",
       "subScores": {
         "Qualität/Burggraben": 27,
         "Bilanz / Überlebensfähigkeit": 3,
-        "Bewertungsabschlag": 66,
+        "Bewertungsabschlag": 68,
         "Setup/Stabilisierung": 49
       },
-      "fairValue": 12.67,
-      "conservativeFairValue": 10.77,
-      "safetyMarginPct": 0.2303,
-      "buyZone": 8.87,
-      "sellThreshold": 14.57,
+      "fairValue": 13.17,
+      "conservativeFairValue": 11.19,
+      "safetyMarginPct": 0.2595,
+      "buyZone": 9.22,
+      "sellThreshold": 15.14,
       "verdict": "VERKAUFEN",
       "dataFlags": [
         "⚑ Temporär-vs-struktureller Auslöser & Katalysator nur via KI-Analyse beurteilbar",
