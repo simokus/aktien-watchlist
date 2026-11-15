@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-14T12:59:16.399016+01:00",
+  "lastUpdated": "2026-11-15T13:35:30.214394+01:00",
   "source": "yfinance",
   "stocks": {
     "MSFT": {
@@ -16,7 +16,7 @@
       "profileUsed": "largecap",
       "metrics": {
         "pe": 27.34238,
-        "fwdPe": 21.656946,
+        "fwdPe": 21.65179,
         "peg": 1.55,
         "pb": 8.269483,
         "evEbitda": 19.251,
@@ -85,7 +85,7 @@
         "beta": 2.247,
         "week52High": 243.37,
         "week52Low": 148.8,
-        "targetMean": 283.30756,
+        "targetMean": 278.30756,
         "analystCount": 53,
         "recommendationKey": "buy",
         "dividendYield": 0.61
@@ -99,11 +99,11 @@
         "Bilanz": 80,
         "Analysten": 88
       },
-      "fairValue": 283.31,
-      "conservativeFairValue": 240.81,
-      "safetyMarginPct": 0.4252,
-      "buyZone": 240.81,
-      "sellThreshold": 325.8,
+      "fairValue": 278.31,
+      "conservativeFairValue": 236.56,
+      "safetyMarginPct": 0.4149,
+      "buyZone": 236.56,
+      "sellThreshold": 320.05,
       "verdict": "KAUFEN",
       "dataFlags": [
         "Analysten-Coverage voll (53)",
@@ -127,7 +127,7 @@
       "metrics": {
         "pe": 15.444908,
         "fwdPe": 19.162155,
-        "peg": 1.06,
+        "peg": 1.04,
         "pb": 5.5133653,
         "evEbitda": 19.079,
         "fcfYield": -0.00031970222805477,
@@ -182,7 +182,7 @@
       "metrics": {
         "pe": 30.35294,
         "fwdPe": 18.349085,
-        "peg": 2.15,
+        "peg": 2.17,
         "pb": 7.7218313,
         "evEbitda": 17.175,
         "fcfYield": 0.019386386322913784,
@@ -237,7 +237,7 @@
       "metrics": {
         "pe": 38.2733,
         "fwdPe": 23.723211,
-        "peg": 0.81,
+        "peg": 0.78,
         "pb": 23.245882,
         "evEbitda": 31.032,
         "fcfYield": 0.020104998895979276,
@@ -259,7 +259,7 @@
       "scoreLabel": "Stark positiv",
       "subScores": {
         "Qualität/Moat": 96,
-        "Bewertung": 48,
+        "Bewertung": 49,
         "Wachstum": 100,
         "Bilanz": 97,
         "Analysten": 100
