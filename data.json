@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-21T14:18:05.047227+01:00",
+  "lastUpdated": "2026-11-22T14:09:49.854775+01:00",
   "source": "yfinance",
   "stocks": {
     "MSFT": {
@@ -17,7 +17,7 @@
       "metrics": {
         "pe": 25.2881,
         "fwdPe": 20.020792,
-        "peg": 1.47,
+        "peg": 1.43,
         "pb": 7.648182,
         "evEbitda": 17.83,
         "fcfYield": 0.0008321314492673403,
@@ -72,7 +72,7 @@
       "metrics": {
         "pe": 13.483351,
         "fwdPe": 7.5596437,
-        "peg": 0.18,
+        "peg": 0.15,
         "pb": 11.347857,
         "evEbitda": 12.194,
         "fcfYield": 0.032740256275897786,
@@ -127,7 +127,7 @@
       "metrics": {
         "pe": 13.853265,
         "fwdPe": 17.342186,
-        "peg": 0.96,
+        "peg": 0.94,
         "pb": 4.9451966,
         "evEbitda": 17.059,
         "fcfYield": -0.0003564337769106536,
@@ -182,7 +182,7 @@
       "metrics": {
         "pe": 29.602076,
         "fwdPe": 17.913454,
-        "peg": 2.09,
+        "peg": 2.12,
         "pb": 7.5308104,
         "evEbitda": 16.836,
         "fcfYield": 0.01987812751400771,
@@ -237,7 +237,7 @@
       "metrics": {
         "pe": 33.39051,
         "fwdPe": 20.696676,
-        "peg": 0.75,
+        "peg": 0.68,
         "pb": 20.280243,
         "evEbitda": 26.988,
         "fcfYield": 0.023045011844489538,
@@ -255,7 +255,7 @@
         "recommendationKey": "strong_buy",
         "dividendYield": 0.64
       },
-      "score": 86,
+      "score": 87,
       "scoreLabel": "Stark positiv",
       "subScores": {
         "Qualität/Moat": 96,
